@@ -35,7 +35,7 @@ class TextClassificationDataset:
     """
     extracts a file list from the provided datapath
     """
-    self.sample_files = [f for f in sample_path.glob("*") if f.is_file()]
+    self.sample_files = [f for f in self.data_path.glob("*") if f.is_file()]
     if self.verbose:
       print(f"[+] found {len(self.sample_files)} files")
 
