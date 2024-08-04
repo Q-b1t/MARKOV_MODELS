@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 import string
 from tqdm import tqdm
 
-class PoemDataset:
+class TextClassificationDataset:
   def __init__(self,data_path,test_size=0.2,verbose = False):
     """
     Receives a path with the data samples.
